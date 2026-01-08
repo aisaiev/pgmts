@@ -37,7 +37,7 @@
     "gameboy",
     "game boy camera"
   ],
-  "author": "",
+  "author": "Anton Isaiev",
   "license": "MIT",
   "dependencies": {
     "pngjs": "^7.0.0"
