@@ -262,3 +262,5 @@ MIT
 Inspired by [pgmjs](https://www.npmjs.com/package/pgmjs) by Vlad-Stefan Harbuz.
 
 PNG conversion using [pngjs](https://github.com/lukeapage/pngjs).
+
+Test images `p2.pgm` and `p5.pgm` by [Sven Dahlstrand](https://github.com/svendahlstrand).
