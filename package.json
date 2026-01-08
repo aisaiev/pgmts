@@ -1,0 +1,63 @@
+{
+  "name": "pgmts",
+  "version": "1.0.0",
+  "description": "A TypeScript library for reading PGM images and converting them to PNG. Works in Node.js and browsers.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "import": "./dist/node.js",
+      "require": "./dist/node.js"
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "import": "./dist/browser.js",
+      "require": "./dist/browser.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && tsc tests/test.ts --outDir tests --module commonjs --target ES2020 --esModuleInterop --skipLibCheck && node tests/test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pgm",
+    "image",
+    "png",
+    "converter",
+    "typescript",
+    "browser",
+    "nodejs",
+    "gameboy",
+    "game boy camera"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "pngjs": "^7.0.0"
+  },
+  "peerDependencies": {
+    "pngjs": "^7.0.0"
+  },
+  "peerDependenciesMeta": {
+    "pngjs": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/pngjs": "^6.0.5",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
