@@ -39,6 +39,11 @@
   ],
   "author": "Anton Isaiev",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aisaiev/pgmts.git"
+  },
+  "homepage": "https://github.com/aisaiev/pgmts#readme",
   "dependencies": {
     "pngjs": "^7.0.0"
   },
